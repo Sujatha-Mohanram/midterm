@@ -1,5 +1,75 @@
+<!--
+Student Number : 301152761
+Student Name: Sujatha Mohanram
+Midterm : 1
+*
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%= title %></title>
+    <!-- CSS SECTION -->
+    <link
+      rel="stylesheet"
+      href="/Scripts/lib/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Scripts/lib/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/Content/app.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button
+          type="button"
+          class="navbar-toggle"
+          data-toggle="collapse"
+          data-target=".navbar-ex1-collapse"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"
+          ><i class="fa fa-car fa-lg"></i> My Favourite Cars</a
+        >
+      </div>
 
-<%- include ("../partials/header.ejs"); %>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <% if(title == "Home") { %>
+          <li class="active">
+            <a href="/"><i class="fa fa-home fa-lg"></i> Home</a>
+          </li>
+          <% } else { %>
+          <li>
+            <a href="/"><i class="fa fa-home fa-lg"></i> Home</a>
+          </li>
+          <% } %> <% if(title == "cars") { %>
+          <li class="active">
+            <a href="/cars"><i class="fa fa-car fa-lg"> </i> Cars List</a>
+          </li>
+          <% } else { %>
+          <li>
+            <a href="/cars"><i class="fa fa-car fa-lg"> </i> Cars List</a>
+          </li>
+          <% } %>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+ 
 <div><h1></h1></div>
 <div class="card-body d-flex flex-column col-md-8 align-items-center bgcolor-light" style="border:1px solid  #b8860b">
   <h4 class="logotext"></h4> 
@@ -112,5 +182,17 @@
   crossorigin="anonymous"
 ></script>
 
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+  <div class="container">
+    <h4  class="navbar-text">&copy; 2022 All Rights Reserved.</h4>
+  </div>
+</nav>
 
-<%- include ("../partials/footer.ejs"); %>
+
+
+<!-- JAVASCRIPT SECTION -->
+    <script src="/Scripts/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/Scripts/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/Scripts/app.js"></script>
+  </body>
+</html>

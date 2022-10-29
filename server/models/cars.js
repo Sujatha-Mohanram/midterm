@@ -14,3 +14,9 @@ let Car = mongoose.Schema(
 );
 
 module.exports = mongoose.model("Car", Car);
+/*
+Student Number : 301152761
+Student Name: Sujatha Mohanram
+Midterm : 1
+
+*/
