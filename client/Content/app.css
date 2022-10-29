@@ -1,0 +1,39 @@
+/* custom style come here*/
+/*
+Student Number : 301152761
+Student Name: Sujatha Mohanram
+Assignment : 2
+*/
+nav {
+    background-color: pink;
+ } 
+ body{
+    background-color: #FCE4EC;
+ }
+.logotext{
+    font-family: "Cursive";
+    font-style: italic;
+    color:#b8860b;
+    font-display: #b8860b;
+}
+.bgcolor-pink{
+    background-color: pink;
+}
+bgcolor-lavender{
+    background-color: #f1a7fe;
+}
+p{
+    font-family: "Cursive";
+    font-style: italic;
+    color:darkmagenta;
+    font-size: medium;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  
+    border-color: #b8860b !important;
+    
+}
+.btn-secondary{
+   
+    border-color: #b8860b !important;
+}
